@@ -10,7 +10,7 @@
 ## 功能描述
 - UDP套接字通信
 - 服务器端发送文件
-- 客户端接收文件
+- 客户端接收文件 
 
 <!-- ## 文件
 - `transmissionwindow.h`：自定义的窗口类 TransmissionWindow 的头文件。
