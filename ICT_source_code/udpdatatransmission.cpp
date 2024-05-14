@@ -61,7 +61,7 @@ quint8 UdpDataTransmission::setDatagramNum(const quint32 &value)
     return UdpDataTransmission::cutArray();
 }
 
-void UdpDataTransmission::sharkHands()
+void UdpDataTransmission::shakeHands()
 {
     connect(this,SIGNAL(startSharkHands()),udpWorker,SLOT(sharkHands()),Qt::UniqueConnection);
     emit startSharkHands();

@@ -22,13 +22,13 @@ public:
                         QFileInfo *sendFileInfo);
     virtual ~UdpDataTransmission();
 
-    static const quint16 MAX_DATAGRAM_SIZE = 500; //512-4-8=500byte,4byte保存序号，8byte保存时间戳
+    static const quint16 MAX_DATAGRAM_SIZE = 500; //一次可以发送UDP数据报的最大大小，512-4-8=500byte，4byte保存序号，8byte保存时间戳
     UdpWorker *udpWorker;
     QList<QByteArray> getByteArrayList() const;
 
     bool udpBind();
     quint8 setDatagramNum(const quint32 &value);
-    void sharkHands();
+    void shakeHands();
 
 public slots:
     //void readPendingDatagrams();

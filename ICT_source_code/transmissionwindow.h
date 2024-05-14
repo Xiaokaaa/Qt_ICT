@@ -6,9 +6,10 @@
 #include <QtWidgets>
 #include <QFileDialog>
 #include <QCloseEvent>
+#include <QRegularExpressionValidator>
 
 #include "udpdatatransmission.h"
-#include "udpworker.h"
+//#include "udpworker.h"
 #include "udpclient.h"
 
 QT_BEGIN_NAMESPACE
@@ -46,8 +47,8 @@ private:
     void UiInit();
     int deleteLastLine(QString &str);
 
-    QList<QNetworkInterface> interfaceList;  //保存网络适配器列表
-    qint8 model;                        //0为服务器模式，1为客户端模式
+    QList<QNetworkInterface> interfaceList;  // 保存网络接口列表
+    qint8 model;
     Ui::TransmissionWindow *ui;
     QString sendingFileName;
     QString logFileDirectory;
